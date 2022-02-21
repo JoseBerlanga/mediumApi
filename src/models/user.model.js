@@ -10,6 +10,11 @@ const userSchema = new mongoose.Schema({
         match: /[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n+]/,
         required: true
     },
+    password:{
+        type: String,
+        requires: true,
+        minlength: 6
+    }
     
 
 })
